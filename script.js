@@ -6,6 +6,7 @@ make more responsive
 comment files
 fix up styling and wording of things
 make logos links to something or just homepage
+remove blue line on recommended if needed 
 */
 
 //--------top barnavigation--------
