@@ -7,6 +7,7 @@ comment files
 fix up styling and wording of things
 make logos links to something or just homepage
 remove blue line on recommended if needed 
+fix scrolling when we click on something in the menu to go to the item and not a below it
 */
 
 //--------top barnavigation--------
