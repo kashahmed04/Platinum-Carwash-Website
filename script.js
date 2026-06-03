@@ -8,6 +8,7 @@ fix up styling and wording of things
 make logos links to something or just homepage
 remove blue line on recommended if needed 
 add local Business schema markup into head of HTML 
+make sure favicon is good andbig enough
 fix scrolling when we click on something in the menu to go to the item and not a below it
 */
 
