@@ -27,6 +27,7 @@ fix social media icons if it looks weird on mobile
 check grammar and hyphens for things needed as well as capitalization
 fix up see the wash section on mobile with images
 make sure hyphens are fine in code and site and not highlighted yellow in code editor
+make sure all hover / click / other effects match on whole page same with buttons and anything else 
 */
 
 // ===============================
