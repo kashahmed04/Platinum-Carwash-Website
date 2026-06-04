@@ -2,6 +2,8 @@
 TODO:
 
 finish site
+add SEO stuff from document
+could add description on revive your ride after the title like other sites 
 make everything more responsive
 comment files
 fix up styling and wording of things
