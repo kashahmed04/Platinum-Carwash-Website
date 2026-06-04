@@ -8,28 +8,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- favicons based on device type-->
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
 
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+  <div id="top"></div>
+
   <!-- navigation bar -->
   <header class="hero-nav">
     <div class="hero-inner">
 
       <div class="hero-logo">
-        <img src="images/logo-transparent.png" alt="Platinum Carwash logo">
+        <a href="#top">
+          <img src="logos/logo-transparent.png" alt="Platinum Carwash logo">
+        </a>
       </div>
 
+
       <nav class="hero-menu">
-        <a href="#wash" class="active">Wash</a>
+        <a href="#wash" class="active">Touch-Free Wash</a>
         <a href="#self-service">Self-Service</a>
         <a href="#dog-wash">Dog Wash</a>
         <a href="#location">Location</a>
@@ -41,7 +47,7 @@
           <span></span><span></span><span></span>
         </button>
 
-        <a href="#wash" class="btn-drive">Drive over →</a>
+        <a href="#location" class="btn-drive">Drive over →</a>
       </div>
 
     </div>
@@ -55,7 +61,7 @@
         <h1>Revive<br>your ride.</h1>
 
         <p class="hero-subtitle">
-          Touch free automatic. Three self-service bays. K9000 dog wash.
+          Touch-Free Automatic. Three Self-Service Bays. K9000 Dog Wash.
           Open every minute of every day on Niagara Falls Boulevard.
         </p>
       </div>
@@ -64,7 +70,7 @@
         <div class="hero-stat">
           <span class="hero-stat-label">WASH</span>
           <span class="hero-stat-value">$7</span>
-          <span class="hero-stat-note">Starts at - touch free</span>
+          <span class="hero-stat-note">Starts at - Touch-free</span>
         </div>
 
         <div class="hero-stat">
@@ -87,16 +93,48 @@
       </div>
     </section>
 
+    <!-- facility menu -->
+    <section class="facility">
+      <div class="section-header">
+        <span class="section-tag">OUR FACILITY</span>
+        <h2>See the Wash</h2>
+      </div>
+
+      <div class="facility-grid">
+        <figure class="facility-item">
+          <img src="images/facility-building.jpeg" alt="Exterior of the car wash building">
+          <figcaption class="facility-label">Our Building</figcaption>
+        </figure>
+
+        <figure class="facility-item">
+          <img src="images/facility-building.jpeg" alt="Touch-free automatic wash bay">
+          <figcaption class="facility-label">Touch-Free Automatic</figcaption>
+        </figure>
+
+        <figure class="facility-item">
+          <img src="images/facility-building.jpeg" alt="Self-service wash bays">
+          <figcaption class="facility-label">Self-Service Bays</figcaption>
+        </figure>
+
+        <figure class="facility-item">
+          <img src="images/facility-vacuums.jpeg" alt="High-power vacuums">
+          <figcaption class="facility-label">High-Power Vacuums</figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+
     <!-- wash menu -->
     <section id="wash" class="section wash-menu">
 
       <header class="section-header">
-        <p class="section-tag">01 / TOUCHFREE</p>
+        <p class="section-tag">01 / TOUCH-FREE</p>
 
         <h2>The wash menu</h2>
 
         <p class="section-subtitle">
-          Touch free. No brushes. No membership required.
+          Touch-Free. No brushes. No membership required.
         </p>
       </header>
 
@@ -151,7 +189,7 @@
       </div>
 
       <div class="wash-footnote">
-        <p>EVERY WASH • TOUCHFREE • NO BRUSHES</p>
+        <p>EVERY WASH • TOUCH-FREE • NO BRUSHES</p>
         <p>CASH OR CREDIT • NO MEMBERSHIP REQUIRED</p>
       </div>
 
@@ -284,50 +322,81 @@
 
     <!--location section -->
     <section id="location" class="section location">
-      <header class="section-header">
-        <p class="section-tag">04 / FIND US</p>
-        <h2>3509 Niagara Falls Boulevard</h2>
-        <p class="section-subtitle">North Tonawanda, NY 14120</p>
-      </header>
 
       <div class="location-grid">
+
         <div class="location-details">
+
+          <p class="section-tag">04 / FIND US</p>
+
+          <h2>
+            3509 Niagara<br>
+            Falls Boulevard
+          </h2>
+
+          <p class="location-city">
+            North Tonawanda, NY 14120
+          </p>
+
           <table>
             <tbody>
               <tr>
                 <td>HOURS</td>
                 <td>24 / 7 / 365</td>
               </tr>
+
               <tr>
                 <td>PHONE</td>
-                <td><a href="tel:17165180624">716 . 518 . 0624</a></td>
+                <td>
+                  <a href="tel:17165180624">
+                    716 . 518 . 0624
+                  </a>
+                </td>
               </tr>
+
               <tr>
                 <td>EMAIL</td>
-                <td><a href="mailto:support@platinumwash.io">support@platinumwash.io</a></td>
+                <td>
+                  <a href="mailto:support@platinumwash.io">
+                    support@platinumwash.io
+                  </a>
+                </td>
               </tr>
+
               <tr>
                 <td>SERVES</td>
                 <td>N. Tonawanda . Wheatfield</td>
               </tr>
+
+              <tr>
+                <td>CARE</td>
+                <td>Maintained equipment · Responsive support</td>
+              </tr>
+
             </tbody>
           </table>
 
-          <p class="coords">
-            COORDINATES<br>
-            43.0769º N . 78.8631° W
-          </p>
-
           <div class="location-actions">
-            <a href="#" class="btn">Open in Maps</a>
-            <a href="tel:17165180624" class="btn btn-secondary">Call</a>
+            <a href="https://maps.app.goo.gl/ajHsjS94fnCbYqK96" class="btn" target="_blank" rel="noopener">
+              Open in Maps →
+            </a>
+
+
+            <a href="tel:17165180624" class="btn btn-secondary">
+              Call
+            </a>
           </div>
+
         </div>
 
         <div class="location-map">
-          <!-- PLACEHOLDER: replace with Google Maps embed -->
+          <iframe src="https://www.google.com/maps?q=3509+Niagara+Falls+Blvd+North+Tonawanda+NY+14120&output=embed"
+            loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
+
       </div>
+
     </section>
 
     <!-- FAQ section-->
@@ -351,7 +420,18 @@
 
         <article class="faq-item">
           <button class="faq-question">
-            <span>02 · Do I need a membership?</span>
+            <span>02 · Is your wash safe for all paint types?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes — both our touch-free wash and self-service bays are safe for all modern paint finishes,
+              including clear coat, factory paint, wraps, and ceramic coatings.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question">
+            <span>03 · Do I need a membership?</span>
             <span class="faq-toggle">+</span>
           </button>
           <div class="faq-answer">
@@ -361,31 +441,21 @@
 
         <article class="faq-item">
           <button class="faq-question">
-            <span>03 · Is the touchfree wash safe for my paint?</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes — it's fully touchless with no brushes, and uses industry-standard chemistry.</p>
-          </div>
-        </article>
-
-        <article class="faq-item">
-          <button class="faq-question">
-            <span>04 · Can I bring a lifted truck or trailer?</span>
-            <span class="faq-toggle">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Clearance limits apply; check posted signage on-site for current height restrictions.</p>
-          </div>
-        </article>
-
-        <article class="faq-item">
-          <button class="faq-question">
-            <span>05 · What forms of payment?</span>
+            <span>04 · What forms of payment?</span>
             <span class="faq-toggle">+</span>
           </button>
           <div class="faq-answer">
             <p>Cash, major credit cards, and coins where indicated.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question">
+            <span>05 · Can I bring a lifted truck or trailer?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Clearance limits apply; check posted signage on-site for current height restrictions.</p>
           </div>
         </article>
 
@@ -399,27 +469,71 @@
           </div>
         </article>
 
+        <article class="faq-item">
+          <button class="faq-question">
+            <span>07 · Are towels provided?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No - Towels are not included, but they are available for purchase on site.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question">
+            <span>08 · Do you offer gift cards?</span>
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Not at this time.</p>
+          </div>
+        </article>
+
       </div>
     </section>
 
   </main>
 
-  <!-- footer -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-top">
+      <!-- Left column: Logo + social + contact -->
       <div class="footer-brand">
-        <div class="footer-logo">PLATINUM</div>
-        <p>
-          Touchfree, self-service, and dog wash on Niagara Falls Boulevard.
-          Open every minute of every day.
-        </p>
+        <div class="footer-logo">
+          <img src="logos/logo-transparent.png" alt="Platinum Carwash logo">
+        </div>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/platinum.carwash716" target="_blank" aria-label="Instagram"
+            class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <rect x="2.5" y="2.5" width="19" height="19" rx="5" ry="5" stroke-width="2" />
+              <circle cx="12" cy="12" r="4" stroke-width="2" />
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M13.5 9H16V6h-2.5C11.57 6 10 7.57 10 9.5V12H8v3h2v6h3v-6h2.3l.7-3H13v-2.5c0-.28.22-.5.5-.5z" />
+            </svg>
+
+          </a>
+        </div>
+
+        <div class="footer-contact">
+          <p>
+            <a href="tel:17165180624">716-518-0624</a><br>
+            <a href="mailto:support@platinumwash.io">support@platinumwash.io</a>
+          </p>
+        </div>
       </div>
 
+      <!-- Middle columns -->
       <div class="footer-links">
         <div>
           <h3>Services</h3>
           <ul>
-            <li><a href="#wash">Touchfree wash</a></li>
+            <li><a href="#wash">Touch-free wash</a></li>
             <li><a href="#self-service">Self-service</a></li>
             <li><a href="#dog-wash">Dog wash</a></li>
             <li><a href="#self-service">Vacuums</a></li>
@@ -432,21 +546,28 @@
             <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
-      </div>
-
-      <div class="footer-visit">
-        <h3>Visit</h3>
-        <p>
-          3509 Niagara Falls Blvd<br>
-          North Tonawanda, NY<br>
-          716 . 518 . 0624<br>
-          <a href="mailto:support@platinumwash.io">support@platinumwash.io</a>
-        </p>
+        <div>
+          <h3>Visit</h3>
+          <p>
+            3509 Niagara Falls Blvd<br>
+            North Tonawanda, NY<br>
+            716 . 518 . 0624<br>
+            <a href="mailto:support@platinumwash.io">support@platinumwash.io</a>
+          </p>
+        </div>
       </div>
     </div>
 
+    <!-- Bottom bar -->
+    <div class="footer-bar"></div>
+
+    <!-- Copyright / slogan -->
     <div class="footer-bottom">
-      <p>@ 2026 PLATINUM CARWASH . NORTH TONAWANDA, NY · REVIVE YOUR RIDE</p>
+      <p>© 2026 PLATINUM CARWASH · NORTH TONAWANDA, NY · REVIVE YOUR RIDE</p>
+      <p class="footer-desc">
+        Touch-free, self-service, and dog wash on Niagara Falls Boulevard.
+        Open every minute of every day.
+      </p>
     </div>
   </footer>
 

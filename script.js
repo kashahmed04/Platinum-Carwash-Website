@@ -2,7 +2,7 @@
 TODO:
 
 finish site
-make more responsive
+make everything more responsive
 comment files
 fix up styling and wording of things
 make logos links to something or just homepage
@@ -10,12 +10,31 @@ remove blue line on recommended if needed
 add local Business schema markup into head of HTML 
 make sure favicon is good and big enough and good across all devides
 fix scrolling when we click on something in the menu to go to the item and not a below it
+make links on page work properly
+fix alt text for images when it is finalized 
+make hover effects and colors for it consistent across the site
+make sure all socials are properly formatted the same and contact information as well
+make sure everyhting is aligned correctly
+fix links to things when needed like socials when create facebook
+local Business Schema Markup replace URL and image with our own image and domain when created (create the schema when site is fully done)
+make sure priavated things are removed before posting site 
+make sure grammar is consistent on site along with sentences
+check if things need to be highlighted when we navigate to them
+embed platinum carwash pin on embeded google map based on google business profile when get login
+fix social media icons if it looks weird on mobile 
+check grammar and hyphens for things needed as well as capitalization
+fix up see the wash section on mobile with images
+make sure hyphens are fine in code and site and not highlighted yellow in code editor
 */
 
-//--------top barnavigation--------
+// ===============================
+// MOBILE NAVIGATION
+// ===============================
 const hamburger = document.querySelector('.hamburger');
 const heroNav = document.querySelector('.hero-nav');
+const menuLinks = document.querySelectorAll('.hero-menu a');
 
+// Open/close menu when hamburger is clicked
 if (hamburger && heroNav) {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -23,57 +42,63 @@ if (hamburger && heroNav) {
   });
 }
 
-//--------FAQ--------
+//auto-close menu when a link is clicked
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    heroNav.classList.remove('open');
+    hamburger.classList.remove('active');
+  });
+});
+
+
+// ===============================
+// FAQ 
+// ===============================
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item => {
   const question = item.querySelector(".faq-question");
-  const answer = item.querySelector(".faq-answer");
 
   question.addEventListener("click", () => {
-    const isOpen = answer.style.display === "block";
+    const isActive = item.classList.contains("active");
 
-    faqItems.forEach(i => {
-      i.querySelector(".faq-answer").style.display = "none";
-      i.querySelector(".faq-toggle").textContent = "+";
-    });
+    // Close all FAQ items
+    faqItems.forEach(faq => faq.classList.remove("active"));
 
-    if (!isOpen) {
-      answer.style.display = "block";
-      item.querySelector(".faq-toggle").textContent = "–";
-    } else {
-      answer.style.display = "none";
-      item.querySelector(".faq-toggle").textContent = "+";
-    }
+    // Reopen clicked item if it wasn't already open
+    if (!isActive) item.classList.add("active");
   });
 });
 
-//smooth scroll 
+
+// ===============================
+// SMOOTH SCROLL (with menu close first)
+// ===============================
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", e => {
     const target = document.querySelector(link.getAttribute("href"));
     if (!target) return;
 
     e.preventDefault();
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    // Close mobile menu BEFORE scrolling
+    heroNav.classList.remove("open");
+    hamburger.classList.remove("active");
+
+    // Slight delay ensures clean animation
+    setTimeout(() => {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 10);
   });
 });
 
-//image placeholders
-// const heroImg = document.querySelector(".hero-image img");
-// if (heroImg && !heroImg.src) {
-//   heroImg.src = "https://via.placeholder.com/800x500?text=Hero+Image";
-// }
 
+// ===============================
+// IMAGE PLACEHOLDERS
+// ===============================
 const dogImg = document.querySelector(".dog-image img");
 if (dogImg && !dogImg.src) {
   dogImg.src = "https://via.placeholder.com/800x500?text=Dog+Wash+Image";
 }
 
-const mapBox = document.querySelector(".location-map");
-if (mapBox && mapBox.children.length === 0) {
-  mapBox.style.backgroundImage =
-    "url('https://via.placeholder.com/800x400?text=Map+Placeholder')";
-  mapBox.style.backgroundSize = "cover";
-  mapBox.style.backgroundPosition = "center";
-}
+
