@@ -28,6 +28,9 @@ check grammar and hyphens for things needed as well as capitalization
 fix up see the wash section on mobile with images
 make sure hyphens are fine in code and site and not highlighted yellow in code editor
 make sure all hover / click / other effects match on whole page same with buttons and anything else 
+  add leave us a review section and link to reviews like go car wash or add embedded reviews 
+do things in discovery doc and make sure those items are completed
+fix leave a review section when link is generated on google business profile 
 */
 
 // ===============================

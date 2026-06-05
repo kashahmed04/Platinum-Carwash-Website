@@ -1083,6 +1083,17 @@ li {
   word-break: break-word;
 }
 
+.location-details table a {
+  color: #071322;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.location-details table a:hover {
+  color: #3dbff3;
+  text-decoration: underline;
+}
+
 /* buttons */
 .location-actions {
   display: flex;
@@ -1408,8 +1419,8 @@ li {
 }
 
 .footer-social .social-icon:hover {
-  background: #f0f0f0;
-  border-color: #ccc;
+  background: #e9e9e9; 
+  border-color: #c8c8c8;
   color: #5cd3ff;
 }
 
