@@ -31,6 +31,7 @@ make sure all hover / click / other effects match on whole page same with button
   add leave us a review section and link to reviews like go car wash or add embedded reviews 
 do things in discovery doc and make sure those items are completed
 fix leave a review section when link is generated on google business profile 
+add hpone / email icons if needed 
 */
 
 // ===============================
