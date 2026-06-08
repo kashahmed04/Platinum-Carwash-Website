@@ -35,6 +35,7 @@ add hpone / email icons if needed
 make photo scetion more modern (and all site)
 make sure no extra HTML CSS or JS in code that is not needed 
 fix fonts, content, responsiveness, and photos more modern
+add embedded customer reviews on site
 
 responsiveness test dimensions
 
