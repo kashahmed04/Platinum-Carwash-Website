@@ -546,9 +546,7 @@ li {
 
 .wash-packages {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
-  min-width: 0;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .wash-card {
@@ -621,25 +619,6 @@ li {
   letter-spacing: 0.08em;
 }
 
-.wash-footnote {
-  display: flex;
-  justify-content: space-between;
-
-  padding: 1rem 2rem;
-
-  border-top: 1px solid #dddddd;
-
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  color: #888;
-
-  min-width: 0;
-}
-
-.wash-footnote p {
-  overflow-wrap: break-word;
-}
-
 /*--------wash menu mobile--------*/
 @media (max-width: 768px) {
 
@@ -687,7 +666,7 @@ li {
 /*--------self service desktop--------*/
 .self-grid {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 2fr 3fr;
   gap: 24px;
 }
 
@@ -805,11 +784,11 @@ li {
 
 .self-extras {
   margin-top: 12px;
-
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 12px;
 }
+
 
 .self-extras div {
   border: 1px solid #ddd;
@@ -1007,9 +986,10 @@ li {
 }
 
 /*--------location section desktop--------*/
+
 .location-grid {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 2fr 3fr;
   gap: 24px;
   align-items: stretch;
 }
@@ -1161,7 +1141,7 @@ li {
   }
 
   .location-details td:first-child {
-    width: 70px;
+    width: 65px;
   }
 
   .location-map iframe {
@@ -1172,7 +1152,21 @@ li {
   .location-actions {
     flex-direction: column;
   }
+  
 }
+
+@media (max-width: 1024px) {
+
+  .location-actions {
+    flex-direction: column;
+  }
+
+  .location-actions .btn {
+    width: 100%;
+  }
+
+}
+
 
 /*--------FAQ section desktop--------*/
 .faq {
@@ -1424,15 +1418,6 @@ li {
 }
 
 /*--------contact--------*/
-.footer-contact {
-  margin-top: 16px;
-}
-
-.footer-contact p {
-  margin: 0;
-  line-height: 1.8;
-}
-
 .footer-contact a {
   color: #cfe6f3;
   text-decoration: none;

@@ -32,6 +32,19 @@ make sure all hover / click / other effects match on whole page same with button
 do things in discovery doc and make sure those items are completed
 fix leave a review section when link is generated on google business profile 
 add hpone / email icons if needed 
+make photo scetion more modern (and all site)
+make sure no extra HTML CSS or JS in code that is not needed 
+
+responsiveness test dimensions
+
+320 × 568
+375 × 667
+390 × 844
+768 × 1024
+820 × 1180
+912 × 1368
+1366 × 768
+1920 × 1080
 */
 
 // ===============================
