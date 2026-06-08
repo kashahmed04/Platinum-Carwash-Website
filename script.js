@@ -34,6 +34,7 @@ fix leave a review section when link is generated on google business profile
 add hpone / email icons if needed 
 make photo scetion more modern (and all site)
 make sure no extra HTML CSS or JS in code that is not needed 
+fix fonts, content, responsiveness, and photos more modern
 
 responsiveness test dimensions
 
