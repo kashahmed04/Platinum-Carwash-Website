@@ -17,7 +17,7 @@ make sure everyhting is aligned correctly
 fix links to things when needed like socials when create facebook
 local Business Schema Markup replace URL and image with our own image and domain when created (create the schema when site is fully done)
 make sure priavated things are removed before posting site 
-make sure grammar is consistent on site along with sentences
+make sure grammar/spelling is consistent on site along with sentences
 check if things need to be highlighted when we navigate to them
 embed platinum carwash pin on embeded google map based on google business profile when get login
 fix social media icons if it looks weird on mobile 
@@ -37,6 +37,7 @@ use same aspect ratio for see the wash and use 16.9 for dog wash
 fix photo alignment for (the stylesfor the 320 x 568 and 768 x 1024 
 overlap for thesee the wash section and now my 320 x 568is doing this again butthe 768 x1024 is fine)
 make sure favicons work for all device types and sizes (apple, etc.)
+test on all device types and android
 responsiveness test dimensions
 
 320 × 568
