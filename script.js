@@ -3,16 +3,13 @@ TODO:
 
 finish site
 add SEO stuff from document
-could add description on revive your ride after the title like other sites 
 make everything more responsive
 comment files
 fix up styling and wording of things
-make logos links to something or just homepage
-remove blue line on recommended if needed 
 add local Business schema markup into head of HTML 
-make sure favicon is good and big enough and good across all devides
-fix scrolling when we click on something in the menu to go to the item and not a below it
+make sure favicon is good and big enough and good across all devices
 make links on page work properly
+add images needed
 fix alt text for images when it is finalized 
 make hover effects and colors for it consistent across the site
 make sure all socials are properly formatted the same and contact information as well
@@ -28,7 +25,7 @@ check grammar and hyphens for things needed as well as capitalization
 fix up see the wash section on mobile with images
 make sure hyphens are fine in code and site and not highlighted yellow in code editor
 make sure all hover / click / other effects match on whole page same with buttons and anything else 
-  add leave us a review section and link to reviews like go car wash or add embedded reviews 
+add leave us a review section and link to reviews like go car wash or add embedded reviews 
 do things in discovery doc and make sure those items are completed
 fix leave a review section when link is generated on google business profile 
 add hpone / email icons if needed 
@@ -36,6 +33,9 @@ make photo scetion more modern (and all site)
 make sure no extra HTML CSS or JS in code that is not needed 
 fix fonts, content, responsiveness, and photos more modern
 add embedded customer reviews on site
+use same aspect ratio for see the wash and use 16.9 for dog wash 
+fix photo alignment for (the stylesfor the 320 x 568 and 768 x 1024 
+overlap for thesee the wash section and now my 320 x 568is doing this again butthe 768 x1024 is fine)
 
 responsiveness test dimensions
 

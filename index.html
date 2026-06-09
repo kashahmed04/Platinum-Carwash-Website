@@ -6,6 +6,11 @@
   <meta name="theme-color" content="#000000">
   <title>Platinum Carwash</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
   <!-- favicons based on device type-->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -14,10 +19,12 @@
   <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
   <link rel="manifest" href="favicons/site.webmanifest">
 
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -29,7 +36,7 @@
 
       <div class="hero-logo">
         <a href="#top">
-          <img src="logos/logo-transparent.png" alt="Platinum Carwash logo">
+          <img src="logos/logo-transparent.png" alt="Platinum Carwash logo" height="60">
         </a>
       </div>
 
@@ -43,7 +50,7 @@
       </nav>
 
       <div class="hero-right">
-        <button class="hamburger" aria-label="Menu">
+        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
 
@@ -58,11 +65,11 @@
   <main>
     <section id="hero" class="hero">
       <div class="hero-text">
-        <h1>Revive<br>your ride.</h1>
+        <h1>Revive<br><span>your ride</span></h1>
 
         <p class="hero-subtitle">
           Touch-Free Automatic. Three Self-Service Bays. K9000 Dog Wash.
-          Open every minute of every day on Niagara Falls Boulevard.
+          Open 24/7/365 on Niagara Falls Boulevard.
         </p>
       </div>
 
@@ -70,25 +77,25 @@
         <div class="hero-stat">
           <span class="hero-stat-label">WASH</span>
           <span class="hero-stat-value">$7</span>
-          <span class="hero-stat-note">Starts at - Touch-free</span>
+          <span class="hero-stat-note">Starts at $7 - Touch-free</span>
         </div>
 
         <div class="hero-stat">
           <span class="hero-stat-label">BAYS</span>
           <span class="hero-stat-value">3</span>
-          <span class="hero-stat-note">Self-service</span>
+          <span class="hero-stat-note">Self-Service</span>
         </div>
 
         <div class="hero-stat">
           <span class="hero-stat-label">DOG</span>
           <span class="hero-stat-value">2</span>
-          <span class="hero-stat-note">K9000 stations</span>
+          <span class="hero-stat-note">K9000 Stations</span>
         </div>
 
         <div class="hero-stat">
           <span class="hero-stat-label">VACUUMS</span>
           <span class="hero-stat-value">2</span>
-          <span class="hero-stat-note">Paid vacuums</span>
+          <span class="hero-stat-note">Vacuum Stations</span>
         </div>
       </div>
     </section>
@@ -131,7 +138,7 @@
       <header class="section-header">
         <p class="section-tag">01 / TOUCH-FREE</p>
 
-        <h2>The wash menu</h2>
+        <h2>The Wash Menu</h2>
 
         <p class="section-subtitle">
           Touch-Free. No brushes. No membership required. Accepts cash or credit.
@@ -146,9 +153,10 @@
           <p class="wash-price">$7</p>
 
           <ul class="wash-features">
-            <li>Spot Free Rinse</li>
-            <li>High Pressure Wash</li>
-            <li>Quick Cycle</li>
+            <li>Foam Action Cleaner</li>
+            <li>Hot Presoak</li>
+            <li>LaserWash Process</li>
+            <li>Spot-Free Rinse</li>
           </ul>
         </div>
 
@@ -158,10 +166,13 @@
           <p class="wash-price">$9</p>
 
           <ul class="wash-features">
-            <li>Presoak</li>
-            <li>Spot Free Rinse</li>
-            <li>High Pressure Wash</li>
+            <li>Foam Action Cleaner</li>
+            <li>Hot Presoak</li>          
+            <li>LaserWash Process</li>           
+            <li>Spot-Free Rinse</li>           
             <li>Clear Coat Protectant</li>
+            <li>Underbody Blast</li>
+            <li>Laser Dry</li>
           </ul>
         </div>
 
@@ -178,11 +189,12 @@
           <ul class="wash-features">
             <li>Foam Action Cleaner</li>
             <li>Hot Presoak</li>
+            <li>LaserWash Process</li>
+            <li>Spot-Free Rinse</li>
             <li>Triple Foam Wax</li>
+            <li>Clear Coat Protectant</li>
             <li>Underbody Blast</li>
             <li>Laser Dry</li>
-            <li>Clear Coat Protectant</li>
-            <li>Spot Free Rinse</li>
           </ul>
         </div>
 
@@ -201,29 +213,19 @@
           <p class="section-tag">02 / SELF-SERVICE</p>
 
           <h2>
-            Three bays.<br>
-            You're driving.
+            Three Bays<br>
+            Wash Your Way
           </h2>
 
           <p class="self-description">
-            For trucks, trailers, motorcycles, the dog beds —
+            For trucks, trailers, motorcycles, the dog beds -
             anything that needs a careful hand and a high-pressure wand.
           </p>
 
           <div class="self-pricing">
-            <!-- 
-        <div class="price-box">
-          <strong>$4.50</strong>
-          <span>5 min start</span>
-        </div>
-
-        <div class="price-box">
-          <strong>$0.25</strong>
-          <span>/ 30s after</span>
-        </div> -->
 
             <div class="price-box">
-              <strong>Card, Cash or Coin</strong>
+              <strong>Accepts Card, Cash & Coin</strong>
             </div>
 
           </div>
@@ -235,7 +237,7 @@
 
           <div class="bays-header">
             <span>SELF-SERVICE BAYS</span>
-            <span>ALL COVERED · OPEN 24/7</span>
+            <span>OPEN 24/7/365</span>
           </div>
 
           <div class="self-bays">
@@ -261,7 +263,7 @@
           </div>
 
           <div class="self-extras">
-            <div>◊ 2 PAID VACUUMS</div>
+            <div>◊ 2 VACUUM STATIONS</div>
           </div>
 
         </div>
@@ -278,7 +280,7 @@
         <div class="dog-info">
           <header class="section-header">
             <p class="section-tag">03 / K9000 DOG WASH</p>
-            <h2>For the muddiest <span>family member.</span></h2>
+            <h2>Self-Serve <span>Dog Wash</span></h2>
             <p class="section-subtitle">
               Two raised, no-bend tubs. Warm water, four shampoos, conditioner,
               and a high-velocity dryer. We provide everything but the dog.
@@ -374,7 +376,7 @@
             </a>
 
             <a href="https://g.page/r/XXXXXXXXXXXX/review" class="btn btn-secondary" target="_blank" rel="noopener">
-              Leave a Review 
+              Leave a Review
             </a>
 
             <a href="tel:17165180624" class="btn btn-secondary">
@@ -385,7 +387,7 @@
         </div>
 
         <div class="location-map">
-          <iframe src="https://www.google.com/maps?q=3509+Niagara+Falls+Blvd+North+Tonawanda+NY+14120&output=embed"
+          <iframe title="Map showing Platinum Carwash location" src="https://www.google.com/maps?q=3509+Niagara+Falls+Blvd+North+Tonawanda+NY+14120&output=embed"
             loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
@@ -398,7 +400,7 @@
     <section id="faq" class="section faq">
       <header class="section-header">
         <p class="section-tag">05 / FAQ</p>
-        <h2>Probably already answered.</h2>
+        <h2>Frequently Asked Questions</h2>
       </header>
 
       <div class="faq-list">
@@ -409,7 +411,7 @@
             <span class="faq-toggle">+</span>
           </button>
           <div class="faq-answer">
-            <p>Yes — every bay, every day. Holidays included. The lights stay on.</p>
+            <p>Yes - every bay, every day. Holidays included. The lights stay on.</p>
           </div>
         </article>
 
@@ -419,7 +421,7 @@
             <span class="faq-toggle">+</span>
           </button>
           <div class="faq-answer">
-            <p>Yes — both our touch-free wash and self-service bays are safe for all modern paint finishes,
+            <p>Yes - both our touch-free wash and self-service bays are safe for all modern paint finishes,
               including clear coat, factory paint, wraps, and ceramic coatings.</p>
           </div>
         </article>
@@ -460,7 +462,7 @@
             <span class="faq-toggle">+</span>
           </button>
           <div class="faq-answer">
-            <p>Yes — shampoos, conditioner, and dryer are all included in the session.</p>
+            <p>Yes - shampoo, conditioner, and dryer are all included in the session.</p>
           </div>
         </article>
 
@@ -521,9 +523,9 @@
         <div>
           <h3>Services</h3>
           <ul>
-            <li><a href="#wash">Touch-free wash</a></li>
-            <li><a href="#self-service">Self-service</a></li>
-            <li><a href="#dog-wash">Dog wash</a></li>
+            <li><a href="#wash">Touch-Free Wash</a></li>
+            <li><a href="#self-service">Self-Service</a></li>
+            <li><a href="#dog-wash">Dog Wash</a></li>
           </ul>
         </div>
         <div>
