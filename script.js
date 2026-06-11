@@ -5,6 +5,7 @@ finish site
 add SEO stuff from document
 make everything more responsive
 comment files
+make sure all links have target blank
 fix up styling and wording of things
 add local Business schema markup into head of HTML 
 make sure favicon is good and big enough and good across all devices
@@ -28,17 +29,18 @@ make sure all hover / click / other effects match on whole page same with button
 add leave us a review section and link to reviews like go car wash or add embedded reviews 
 do things in discovery doc and make sure those items are completed
 fix leave a review section when link is generated on google business profile 
-add hpone / email icons if needed 
+add phone / email icons if needed 
 make photo scetion more modern (and all site)
 make sure no extra HTML CSS or JS in code that is not needed 
 fix fonts, content, responsiveness, and photos more modern
 add embedded customer reviews on site
 use same aspect ratio for see the wash and use 16.9 for dog wash 
 fix photo alignment for (the stylesfor the 320 x 568 and 768 x 1024 
-overlap for thesee the wash section and now my 320 x 568is doing this again butthe 768 x1024 is fine)
+overlap for thesee the wash section and now my 320 x 568 is doing this again butthe 768 x1024 is fine)
 make sure favicons work for all device types and sizes (apple, etc.)
 test on all device types and android
 responsiveness test dimensions
+put image in chat and see why favicon is adding extra space (make favicon bigger)(check if it works on all devices)
 
 320 × 568
 375 × 667
