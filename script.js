@@ -2,6 +2,8 @@
 TODO:
 
 finish site
+COMMENT CODE FOR HOW IT WORKS 
+make sure nothing repeats in terms of code
 add SEO stuff from document
 make everything more responsive
 comment files
