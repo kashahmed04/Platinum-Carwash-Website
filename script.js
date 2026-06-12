@@ -99,21 +99,49 @@ faqItems.forEach(item => {
 // ===============================
 // SMOOTH SCROLL (with menu close first)
 // ===============================
+// document.querySelectorAll('a[href^="#"]').forEach(link => {
+//   link.addEventListener("click", e => {
+//     const target = document.querySelector(link.getAttribute("href"));
+//     if (!target) return;
+
+//     e.preventDefault();
+
+//     // Close mobile menu BEFORE scrolling
+//     heroNav.classList.remove("open");
+//     hamburger.classList.remove("active");
+
+//     // Slight delay ensures clean animation
+//     setTimeout(() => {
+//       target.scrollIntoView({ behavior: "smooth", block: "start" });
+//     }, 10);
+//   });
+// });
+
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", e => {
-    const target = document.querySelector(link.getAttribute("href"));
+    const href = link.getAttribute("href");
+
+    // safety checks FIRST
+    if (!href || href === "#") return;
+    if (href.startsWith("tel:") || href.startsWith("mailto:")) return;
+
+    const target = document.querySelector(href);
     if (!target) return;
 
     e.preventDefault();
 
-    // Close mobile menu BEFORE scrolling
     heroNav.classList.remove("open");
     hamburger.classList.remove("active");
 
-    // Slight delay ensures clean animation
     setTimeout(() => {
       target.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 10);
+    }, 0);
+  });
+});
+
+document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.stopPropagation();
   });
 });
 
