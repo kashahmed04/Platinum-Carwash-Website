@@ -1,48 +1,23 @@
 /*
 TODO:
 
-finish site
-COMMENT CODE FOR HOW IT WORKS 
-make sure nothing repeats in terms of code
+update photos from photo shoot when its done
 add SEO stuff from document
 make everything more responsive
-comment files
-make sure all links have target blank
-fix up styling and wording of things
 add local Business schema markup into head of HTML 
-make sure favicon is good and big enough and good across all devices
 make links on page work properly
 add images needed
-fix alt text for images when it is finalized 
-make hover effects and colors for it consistent across the site
-make sure all socials are properly formatted the same and contact information as well
-make sure everyhting is aligned correctly
-fix links to things when needed like socials when create facebook
 local Business Schema Markup replace URL and image with our own image and domain when created (create the schema when site is fully done)
 make sure priavated things are removed before posting site 
-make sure grammar/spelling is consistent on site along with sentences
-check if things need to be highlighted when we navigate to them
 embed platinum carwash pin on embeded google map based on google business profile when get login
-fix social media icons if it looks weird on mobile 
-check grammar and hyphens for things needed as well as capitalization
 fix up see the wash section on mobile with images
-make sure hyphens are fine in code and site and not highlighted yellow in code editor
-make sure all hover / click / other effects match on whole page same with buttons and anything else 
-add leave us a review section and link to reviews like go car wash or add embedded reviews 
 do things in discovery doc and make sure those items are completed
-fix leave a review section when link is generated on google business profile 
-add phone / email icons if needed 
-make photo scetion more modern (and all site)
-make sure no extra HTML CSS or JS in code that is not needed 
-fix fonts, content, responsiveness, and photos more modern
-add embedded customer reviews on site
 use same aspect ratio for see the wash and use 16.9 for dog wash 
 fix photo alignment for (the stylesfor the 320 x 568 and 768 x 1024 
 overlap for thesee the wash section and now my 320 x 568 is doing this again butthe 768 x1024 is fine)
 make sure favicons work for all device types and sizes (apple, etc.)
 test on all device types and android
 responsiveness test dimensions
-put image in chat and see why favicon is adding extra space (make favicon bigger)(check if it works on all devices)
 
 320 × 568
 375 × 667
@@ -54,14 +29,13 @@ put image in chat and see why favicon is adding extra space (make favicon bigger
 1920 × 1080
 */
 
-// ===============================
-// MOBILE NAVIGATION
-// ===============================
+
+//mobile navigation
 const hamburger = document.querySelector('.hamburger');
 const heroNav = document.querySelector('.hero-nav');
 const menuLinks = document.querySelectorAll('.hero-menu a');
 
-// Open/close menu when hamburger is clicked
+//open/close menu when hamburger is clicked
 if (hamburger && heroNav) {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -69,7 +43,7 @@ if (hamburger && heroNav) {
   });
 }
 
-//auto-close menu when a link is clicked
+//auto close menu when a link is clicked
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
     heroNav.classList.remove('open');
@@ -77,80 +51,64 @@ menuLinks.forEach(link => {
   });
 });
 
-
-// ===============================
 // FAQ 
-// ===============================
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item => {
+  //select the current question
   const question = item.querySelector(".faq-question");
 
   question.addEventListener("click", () => {
+    //check if the current FAQ item is already open
     const isActive = item.classList.contains("active");
 
-    // Close all FAQ items
+    //close all FAQ items
     faqItems.forEach(faq => faq.classList.remove("active"));
 
-    // Reopen clicked item if it wasn't already open
+    //reopen clicked item if it wasn't already open
     if (!isActive) item.classList.add("active");
   });
 });
 
-
-// ===============================
-// SMOOTH SCROLL (with menu close first)
-// ===============================
-// document.querySelectorAll('a[href^="#"]').forEach(link => {
-//   link.addEventListener("click", e => {
-//     const target = document.querySelector(link.getAttribute("href"));
-//     if (!target) return;
-
-//     e.preventDefault();
-
-//     // Close mobile menu BEFORE scrolling
-//     heroNav.classList.remove("open");
-//     hamburger.classList.remove("active");
-
-//     // Slight delay ensures clean animation
-//     setTimeout(() => {
-//       target.scrollIntoView({ behavior: "smooth", block: "start" });
-//     }, 10);
-//   });
-// });
-
+//smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener("click", e => {
+    //get the destination section ID 
     const href = link.getAttribute("href");
 
-    // safety checks FIRST
+    //safety checks 
+    //ignore empty anchor  links and ignore telephone links 
     if (!href || href === "#") return;
     if (href.startsWith("tel:") || href.startsWith("mailto:")) return;
 
+    //locate target section
     const target = document.querySelector(href);
+    //exit if target does not exist 
     if (!target) return;
 
+    //prevent the default jump to anchor behavior 
     e.preventDefault();
 
+    //close mobile navigation if open 
     heroNav.classList.remove("open");
     hamburger.classList.remove("active");
 
+    //smoothly scroll to the target section
     setTimeout(() => {
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 0);
   });
 });
 
+//select all the telephone links 
 document.querySelectorAll('a[href^="tel:"]').forEach(link => {
   link.addEventListener("click", (e) => {
+    //prevent parent click handles from firing 
     e.stopPropagation();
   });
 });
 
-
-// ===============================
-// IMAGE PLACEHOLDERS
-// ===============================
+// IMAGE PLACEHOLDERS (WILL REMOVE WHEN PHOTOS ARE TAKEN)
 const dogImg = document.querySelector(".dog-image img");
 if (dogImg && !dogImg.src) {
   dogImg.src = "https://via.placeholder.com/800x500?text=Dog+Wash+Image";
