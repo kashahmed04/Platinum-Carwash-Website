@@ -2,11 +2,7 @@
 TODO:
 
 update photos from photo shoot when its done
-add SEO stuff from document
-add local Business schema markup into head of HTML 
 add images needed
-local Business Schema Markup replace URL and image with our own image and domain when created (create the schema when site is fully done)
-make sure priavated things are removed before posting site 
 embed platinum carwash pin on embeded google map based on google business profile when get login
 fix up see the wash section on mobile with images
 do things in discovery doc and make sure those items are completed
