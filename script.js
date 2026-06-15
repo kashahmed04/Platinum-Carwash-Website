@@ -3,11 +3,10 @@ TODO:
 
 update photos from photo shoot when its done
 add images needed
-embed platinum carwash pin on embeded google map based on google business profile when get login
 fix up see the wash section on mobile with images
 do things in discovery doc and make sure those items are completed
 use same aspect ratio for see the wash and use 16.9 for dog wash 
-fix photo alignment for (the stylesfor the 320 x 568 and 768 x 1024 
+fix photo alignment for (the styles for the 320 x 568 and 768 x 1024 
 overlap for thesee the wash section and now my 320 x 568 is doing this again butthe 768 x1024 is fine)
 make sure favicons work for all device types and sizes (apple, etc.)
 test on all device types and android
