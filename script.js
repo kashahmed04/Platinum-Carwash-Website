@@ -3,9 +3,7 @@ TODO:
 
 update photos from photo shoot when its done
 add SEO stuff from document
-make everything more responsive
 add local Business schema markup into head of HTML 
-make links on page work properly
 add images needed
 local Business Schema Markup replace URL and image with our own image and domain when created (create the schema when site is fully done)
 make sure priavated things are removed before posting site 
