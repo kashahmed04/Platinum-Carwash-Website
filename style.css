@@ -787,11 +787,22 @@ li {
   color: #062b3d;
 }
 
-.bay-footer {
+/* .bay-footer {
   font-size: 0.65rem;
   letter-spacing: 0.15em;
   color: #1976a5;
+} */
+
+.bay-footer {
+  font-size: 0.7rem;
+  text-align: left;
+  line-height: 1.5rem;
+  letter-spacing: 0.15em;
+  padding: 0.25rem 0.5rem;
+  white-space: normal; /* allows wrapping */
+  color: #1976a5;
 }
+
 
 .self-extras {
   margin-top: 12px;
@@ -890,6 +901,13 @@ li {
   .self-info,
   .self-bays-wrapper {
     padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bay-footer {
+    font-size: 0.6rem;
+    line-height: 1.1rem;
   }
 }
 
