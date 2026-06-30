@@ -27,7 +27,6 @@ h6 {
 }
 
 .hero-stat-label,
-.bay-label,
 .bay-footer,
 .dog-meta,
 .footer-links h3 {
@@ -35,7 +34,7 @@ h6 {
 }
 
 .section-tag {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   letter-spacing: 0.15em;
   font-weight: 600;
   text-transform: uppercase;
@@ -404,22 +403,24 @@ li {
 }
 
 .hero-stat-label {
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   letter-spacing: 0.2em;
   color: #888;
   margin-bottom: 0.75rem;
+  font-weight: 600;
 }
 
 .hero-stat-value {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #071322;
+  font-size: 1.5rem;
+  font-weight: 450;
+  color: #424242;
 }
 
 .hero-stat-note {
   margin-top: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #666;
+  font-weight: 500;
 }
 
 /*revive ride mobile*/
@@ -449,11 +450,11 @@ li {
   }
 
   .hero-stat-value {
-    font-size: clamp(1.75rem, 8vw, 2.2rem);
+    font-size: clamp(1.4rem, 8vw, 1.4rem);
   }
 
   .hero-stat-label {
-    font-size: 0.55rem;
+    font-size: 0.75rem;
     letter-spacing: 0.15em;
     line-height: 1.2;
   }
@@ -478,7 +479,7 @@ li {
 }
 
 .facility .section-header h2 {
-  font-size: clamp(2.5rem, 4vw, 3rem);
+  font-size: clamp(2.75rem, 4vw, 2.75rem);
   line-height: 1.1;
   font-weight: 700;
   color: #071322;
@@ -526,7 +527,7 @@ li {
 
 @media (max-width: 1024px) {
   .facility-grid {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 24px 32px;
   }
@@ -534,7 +535,7 @@ li {
 
 @media (max-width: 480px) {
   .facility-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 16px;
     padding: 16px;
   }
@@ -560,7 +561,7 @@ li {
 
 .wash-menu h2 {
   margin: 0.5rem 0;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   color: #071322;
 }
 
@@ -641,7 +642,7 @@ li {
   }
 
   .wash-menu h2 {
-    font-size: 2rem;
+    font-size: 2.75rem;
   }
 
   .wash-packages {
@@ -655,12 +656,12 @@ li {
     min-width: 0;
   }
 
-   .wash-card:first-child {
+  .wash-card:first-child {
     border-top: none;
   }
 
   .wash-card:last-child {
-    border-bottom: none; 
+    border-bottom: none;
   }
 
   .wash-price {
@@ -690,7 +691,7 @@ li {
 
 .self-info h2 {
   margin-top: 20px;
-  font-size: 3rem;
+  font-size: 2.75rem;
   line-height: 0.9;
   color: #071322;
 }
@@ -723,7 +724,7 @@ li {
 
 .price-box strong {
   display: block;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: #071322;
 }
 
@@ -747,7 +748,8 @@ li {
 
   margin-bottom: 16px;
 
-  font-size: 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 600;
   letter-spacing: 0.15em;
   color: #777;
 }
@@ -770,19 +772,20 @@ li {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   min-width: 0;
 }
 
 .bay-label {
-  font-size: 0.65rem;
+  font-size: 2rem;
+  font-weight: 700;
   letter-spacing: 0.15em;
-  color: #1976a5;
+  color: black;
 }
 
 .bay-number {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #062b3d;
 }
@@ -794,12 +797,10 @@ li {
 } */
 
 .bay-footer {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-align: left;
-  line-height: 1.5rem;
   letter-spacing: 0.15em;
-  padding: 0.25rem 0.5rem;
-  white-space: normal; /* allows wrapping */
+  white-space: normal;
   color: #1976a5;
 }
 
@@ -833,7 +834,7 @@ li {
   }
 
   .self-info h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
   }
 
   .self-pricing {
@@ -858,7 +859,7 @@ li {
   }
 
   .bay-number {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .self-extras {
@@ -882,7 +883,7 @@ li {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   .self-grid {
     grid-template-columns: 1fr;
   }
@@ -898,6 +899,7 @@ li {
 }
 
 @media (max-width: 1440px) {
+
   .self-info,
   .self-bays-wrapper {
     padding: 20px;
@@ -906,13 +908,13 @@ li {
 
 @media (max-width: 600px) {
   .bay-footer {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     line-height: 1.1rem;
   }
 }
 
 /*dog wash desktop*/
-.dog-row span:last-child {
+/* .dog-row span:last-child {
   word-break: break-word;
 }
 
@@ -921,10 +923,10 @@ li {
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   align-items: stretch;
-}
+} */
 
 /* left panel */
-.dog-info {
+/* .dog-info {
   background: #062b3d;
   color: #fff;
   padding: 24px;
@@ -939,7 +941,7 @@ li {
 }
 
 .dog-info h2 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   line-height: 0.95;
   margin: 0;
   color: #ffffff;
@@ -1011,10 +1013,10 @@ li {
   font-size: 0.6rem;
   letter-spacing: 0.08em;
   color: rgba(255, 255, 255, 0.6);
-}
+} */
 
 /*dog wash mobile*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .dog-wash .dog-layout {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -1041,6 +1043,222 @@ li {
 
   .dog-image {
     min-height: 260px;
+  }
+} */
+
+
+/*dog wash desktop*/
+.dog-row span:last-child {
+  word-break: break-word;
+}
+
+.dog-wash .dog-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 45fr) minmax(0, 55fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+/*left panel*/
+.dog-info {
+  background: #062b3d;
+  color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #0d3a52;
+  min-height: 430px;
+}
+
+.dog-wash .section-tag {
+  color: #ffffff;
+}
+
+.dog-info h2 {
+  margin: 0;
+  font-size: 2.75rem;
+  line-height: 0.95;
+  color: #ffffff;
+}
+
+.dog-info .section-subtitle {
+  color: #cfe6f3;
+  line-height: 1.7;
+}
+
+.dog-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dog-price {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #3dbff3;
+}
+
+.dog-meta {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: #b7d7e6;
+}
+
+.dog-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.dog-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.dog-row:last-child {
+  border-bottom: none;
+}
+
+.dog-row span:first-child {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: #9ccfe6;
+}
+
+.dog-row span:last-child {
+  font-size: 0.95rem;
+  color: #e6f3fb;
+}
+
+/*right image panel*/
+.dog-image {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 24px;
+  display: flex;
+  min-height: 430px;
+}
+
+/*inner photo frame*/
+.dog-photo {
+  position: relative;
+  flex: 1;
+  margin: 0;
+  overflow: hidden;
+  min-width: 0;
+  background: #000;
+}
+
+.dog-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 48% 28%;
+}
+
+/*caption*/
+.dog-photo::after {
+  content: "K9000 • raised tub, sprayer, dryer";
+  position: absolute;
+  left: clamp(8px, 1vw, 14px);
+  bottom: clamp(8px, 1vw, 14px);
+  z-index: 2;
+
+  max-width: calc(100% - 24px);
+
+  font-size: clamp(0.5rem, 0.8vw, 0.7rem);
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: clamp(0.03em, 0.4vw, 0.08em);
+
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.55);
+  padding: clamp(4px, 0.6vw, 6px) clamp(6px, 0.8vw, 8px);
+  border-radius: 4px;
+
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  white-space: normal;
+}
+
+/*large desktop*/
+@media (min-width: 1400px) {
+  .dog-photo img {
+    object-position: 48% 28%;
+  }
+}
+
+/*medium desktop*/
+@media (max-width: 1200px) {
+  .dog-photo img {
+    object-position: 47% 30%;
+  }
+}
+
+/*dog wash tablet*/
+@media (max-width: 1024px) {
+  .dog-wash .dog-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dog-info {
+    min-height: auto;
+  }
+
+  .dog-image {
+    min-height: 360px;
+  }
+
+  .dog-photo img {
+    object-position: 45% 38%;
+  }
+}
+
+/*dog wash mobile*/
+@media (max-width: 768px) {
+  .dog-wash .dog-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .dog-info {
+    padding: 24px;
+    min-height: auto;
+  }
+
+  .dog-info h2 {
+    font-size: 2.4rem;
+  }
+
+  .dog-pricing {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .dog-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .dog-image {
+    padding: 24px;
+    min-height: 320px;
+  }
+
+  .dog-photo {
+    min-height: 270px;
+  }
+
+  .dog-photo img {
+    object-position: 43% 45%;
   }
 }
 
@@ -1195,14 +1413,33 @@ li {
 
 }
 
+/*location section tablet and mobile*/
 @media (max-width: 1024px) {
+
+  .location-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .location-details {
+    padding: 24px;
+  }
+
+  .location-details h2 {
+    font-size: 2.5rem;
+  }
+
+  .location-details td:first-child {
+    width: 65px;
+  }
+
+  .location-map iframe {
+    height: 320px;
+    min-height: 320px;
+  }
 
   .location-actions {
     flex-direction: column;
-  }
-
-  .location-actions .btn {
-    width: 100%;
   }
 
 }
@@ -1213,10 +1450,49 @@ li {
   }
 }
 
+
+@media (max-width: 480px) {
+
+  .location-details table,
+  .location-details tbody,
+  .location-details tr,
+  .location-details td {
+    display: block;
+    width: 100%;
+  }
+
+  .location-details tr {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .location-details td {
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .location-details td:first-child {
+    width: 100%;
+    margin-bottom: 4px;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+  }
+
+  .location-details td:last-child {
+    width: 100%;
+  }
+
+  .location-details table a {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+}
+
 /*FAQ section desktop*/
 .faq {
   background: #f4f4f4;
-  border: 1px solid #dddddd;  
+  border: 1px solid #dddddd;
 }
 
 .faq .section-header {
@@ -1226,7 +1502,7 @@ li {
 
 .faq .section-header h2 {
   margin: 0.5rem 0 0;
-  font-size: clamp(2.5rem, 4vw, 3rem);
+  font-size: clamp(2.75rem, 4vw, 2.75rem);
   line-height: 1.1;
   color: #071322;
 }
@@ -1569,7 +1845,8 @@ li {
   .footer-desc {
     font-size: 0.8rem;
   }
-/* 
+
+  /* 
   .footer-social .social-icon:nth-child(2) svg {
     transform: translateX(0px) translateY(-0.5px);
 
