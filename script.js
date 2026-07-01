@@ -1,17 +1,9 @@
 /*
 TODO:
 
-update photos from photo shoot when its done
-add images needed
 make sure favicons work across all browser types and devices
 update readme / github when site is done
-fix up see the wash section on mobile with images
-do things in discovery doc and make sure those items are completed
-use same aspect ratio for see the wash and use 16.9 for dog wash 
-fix photo alignment for (the styles for the 320 x 568 and 768 x 1024 
-overlap for thesee the wash section and now my 320 x 568 is doing this again butthe 768 x1024 is fine)
 make sure favicons work for all device types and sizes (apple, etc.)
-fix images orientation (make sure they are straight)
 test on all device types and android
 responsiveness test dimensions
 
