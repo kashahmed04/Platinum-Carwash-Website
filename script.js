@@ -6,7 +6,7 @@ update readme / github when site is done
 make sure all photos are straight on website 
 make sure favicons work for all device types and sizes (apple, etc.)
 test on all device types and android
-responsiveness test dimensions
+responsiveness test dimensionse
 
 320 × 568
 375 × 667
