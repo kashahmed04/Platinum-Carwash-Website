@@ -2,7 +2,7 @@
 TODO:
 
 make sure favicons work acgross all browser types and devices
-update readme / github when site is done
+update readme / github when site is donee
 make sure all photos are straight on website 
 make sure favicons work for all device types and sizes (apple, etc.)
 test on all device types and android
