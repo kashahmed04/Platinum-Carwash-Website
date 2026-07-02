@@ -1,7 +1,7 @@
 /*
 TODO:
 
-make sure favicons work across all browser types and devices
+make sure favicons work acgross all browser types and devices
 update readme / github when site is done
 make sure all photos are straight on website 
 make sure favicons work for all device types and sizes (apple, etc.)
