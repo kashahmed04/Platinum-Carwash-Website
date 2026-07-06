@@ -3,7 +3,7 @@
 This project is the modern, fully responsive rebuild of the Platinum Carwash website. The new version improves design clarity, mobile usability, and overall user experience while maintaining the business’s original branding and service structure.
 
 ## 🚗 Overview
-The site is now live at **https://platinumwash.io**, with ongoing refinements to layout, performance, and content accuracy.
+The site is now live at **https://platinumwash.io**
 
 ## 🛠️ Tech Stack
 - HTML
