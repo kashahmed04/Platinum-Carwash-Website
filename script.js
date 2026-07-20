@@ -1,13 +1,4 @@
 /*
-TODO:
-
-make sure favicons work acgross all browser types and devices
-update readme / githhub when site is doneee
-make sure all photos are straight on website 
-make sure favicons work for all device types and sizes (apple, etc.)
-test on all device types and android
-push new vacuum image onto github
-make sure all images are straight on site
 responsiveness test dimensionse
 
 320 × 568
